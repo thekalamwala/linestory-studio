@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import { Reveal, RevealGroup } from "@/components/Reveal";
-import { clients, testimonials } from "@/data/site";
+import { clients, clientLogos, testimonials } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Clients — Linestory Studio",
@@ -27,9 +27,19 @@ export default function ClientsPage() {
               data-cursor
               className="flex min-h-28 items-center justify-center bg-cream px-6 text-center transition-colors duration-500 hover:bg-cream-deep/60"
             >
-              <span className="font-display text-lg font-light text-ink-soft md:text-xl">
-                {c}
-              </span>
+              {clientLogos[c] ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${clientLogos[c]}`}
+                  alt={c}
+                  loading="lazy"
+                  className="max-h-12 w-auto max-w-[80%] object-contain mix-blend-multiply md:max-h-14"
+                />
+              ) : (
+                <span className="font-display text-lg font-light text-ink-soft md:text-xl">
+                  {c}
+                </span>
+              )}
             </div>
           ))}
         </RevealGroup>

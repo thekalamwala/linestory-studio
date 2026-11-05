@@ -43,10 +43,21 @@ export const clients = [
   "Eureka",
   "Greamio",
   "Cloudblitz",
+  "Sainand",
   "Fireblaze",
   "Rankbrain",
   "Saraswati Veg",
 ];
+
+// Client logos in /public/clients/. Clients without an entry here keep their
+// text wordmark on the clients page.
+export const clientLogos: Record<string, string> = {
+  Eureka: "/clients/eureka.jpg",
+  Cloudblitz: "/clients/cloudblitz.jpg",
+  Sainand: "/clients/sainand.jpg",
+  Fireblaze: "/clients/fireblaze.jpg",
+  Rankbrain: "/clients/rankbrain.jpg",
+};
 
 // Real Google reviews, lightly trimmed from the Google Business Profile.
 export const testimonials = [
