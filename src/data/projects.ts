@@ -28,6 +28,36 @@ const photos = (slug: string, n: number) =>
 
 export const projects: Project[] = [
   {
+    slug: "kamlakar-residence",
+    title: "Kamlakar Residence",
+    location: "Besa, Nagpur",
+    status: "Completed",
+    discipline: "Residential",
+    summary: "Private residence.",
+    description: [],
+    images: photos("kamlakar-residence", 2),
+  },
+  {
+    slug: "fireblaze",
+    title: "Fireblaze",
+    location: "Nagpur",
+    status: "Completed",
+    discipline: "Interior",
+    summary: "Interior project.",
+    description: [],
+    images: photos("fireblaze", 5),
+  },
+  {
+    slug: "nare-residence",
+    title: "Nare Residence",
+    location: "Saoner, Nagpur",
+    status: "Completed",
+    discipline: "Residential",
+    summary: "Private residence.",
+    description: [],
+    images: photos("nare-residence", 6),
+  },
+  {
     slug: "eureka-3-0",
     title: "Eureka 3.0",
     location: "Pune",
