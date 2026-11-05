@@ -73,14 +73,13 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} {site.name}. All rights reserved.
             {" "}— Handcrafted by humans of{" "}
-            {/* Followed link (no nofollow) by request. */}
             <a
-              href="https://timewheel.co.in/website-design-company-in-nagpur"
+              href="https://www.rajmudramedia.com/web-development-company-in-nagpur"
               target="_blank"
               rel="noopener"
               className="underline-offset-2 hover:text-gold hover:underline"
             >
-              Timewheel Internet
+              Rajmudra Media
             </a>
           </p>
           <div className="flex gap-5">
